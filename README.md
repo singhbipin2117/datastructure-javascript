@@ -1,5 +1,5 @@
 # Datastructure in javascript
-## Topics convered
+## Topics covered
 
 * Linkedlist
 * Stack
