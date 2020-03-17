@@ -7,6 +7,7 @@
     * Stack using linkedlist
 * Queue
     * Queue using circular array
+    * Queue using linkedlist
 
 ## Linkedlist
 ### Methods implemented
@@ -48,4 +49,13 @@
 * isEmptyQueue
 * isFullQueue
 * queueSize
+* deleteQueue
+
+### Using Linkedlist
+
+#### Methods implemented
+
+* enQueue
+* deQueue
+* isEmptyQueue
 * deleteQueue
