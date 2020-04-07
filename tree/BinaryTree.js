@@ -80,7 +80,6 @@ class BinarySearchTree {
       node.data = aux.data;
       node.right = this.removeNode(node.right, aux.data);
       return node;
-
     }
   }
 

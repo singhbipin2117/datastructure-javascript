@@ -59,3 +59,19 @@
 * deQueue
 * isEmptyQueue
 * deleteQueue
+
+## Tree
+
+### Binary Tree
+
+#### Methods implemented
+
+* insert
+* remove
+* findMinNode
+* getRootNode
+* inOrder
+* preOrder
+* postOrder
+* search
+* levelOrder
