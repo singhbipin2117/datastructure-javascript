@@ -1,4 +1,4 @@
-// create a graph class 
+// create a graph class
 class Graph {
   constructor(noOfVertices) {
     this.noOfVertices = noOfVertices;
@@ -82,9 +82,7 @@ class Graph {
       let v = q.shift();
       let get_neighbours = this.AdjList.get(v);
       for (let get_elem of get_neighbours) {
-        console.log("get_elem", get_elem);
         if (!distance[get_elem] && distance[get_elem] != 0) {
-          console.log(get_elem, distance[get_elem]);
           distance[get_elem] = distance[v] + 1;
           q.push(get_elem);
         }
@@ -92,21 +90,17 @@ class Graph {
     }
     console.table(distance);
   }
-  // shortest path in weighted graph
-  dijkstras() {
-
-  }
 }
 
 const g = new Graph(6);
 const vertices = ['A', 'B', 'C', 'D', 'E', 'F'];
 
-// adding vertices 
+// // adding vertices 
 for (let i = 0; i < vertices.length; i++) {
   g.addVertex(vertices[i]);
 }
 
-// adding edges 
+// // adding edges 
 g.addEdge('A', 'B');
 g.addEdge('A', 'D');
 g.addEdge('A', 'E');

@@ -32,7 +32,7 @@ class PriorityQueue {
     if (this.isEmpty()) {
       return false;
     }
-    return this.items.shift;
+    return this.items.shift();
   }
 
   front() {
@@ -83,45 +83,48 @@ class PriorityQueue {
   }
 }
 
-// creating object for queue classs 
-var priorityQueue = new PriorityQueue();
+// // creating object for queue classs 
+// var priorityQueue = new PriorityQueue();
 
-// testing isEmpty and front on an empty queue 
-// return true 
-console.log(priorityQueue.isEmpty());
+// // testing isEmpty and front on an empty queue 
+// // return true 
+// console.log(priorityQueue.isEmpty());
 
-// returns "true" 
-console.log(priorityQueue.front());
+// // returns "true" 
+// console.log(priorityQueue.front());
 
-// adding elements to the queue 
-priorityQueue.enqueue("Sumit", 2);
-priorityQueue.enqueue("Gourav", 1);
-priorityQueue.enqueue("Piyush", 1);
-priorityQueue.enqueue("Sunny", 2);
-priorityQueue.enqueue("Sheru", 3);
+// // adding elements to the queue 
+// priorityQueue.enqueue("Sumit", 2);
+// priorityQueue.enqueue("Gourav", 1);
+// priorityQueue.enqueue("Piyush", 1);
+// priorityQueue.enqueue("Sunny", 2);
+// priorityQueue.enqueue("Sheru", 3);
 
-// prints [Gourav Piyush Sumit Sunny Sheru] 
-priorityQueue.printPQueue();
+// // prints [Gourav Piyush Sumit Sunny Sheru] 
+// priorityQueue.printPQueue();
 
-// prints Gourav 
-console.log(priorityQueue.front().data);
+// // prints Gourav 
+// console.log(priorityQueue.front().data);
 
-// pritns Sheru 
-console.log(priorityQueue.rear().data);
+// // pritns Sheru 
+// console.log(priorityQueue.rear().data);
 
-// removes Gouurav 
-// priorityQueue contains 
-// [Piyush Sumit Sunny Sheru] 
-priorityQueue.dequeue().data;
+// // removes Gouurav 
+// // priorityQueue contains 
+// // [Piyush Sumit Sunny Sheru] 
+// priorityQueue.dequeue().data;
 
-// Adding another element to the queue 
-priorityQueue.enqueue("Sunil", 2);
+// // Adding another element to the queue 
+// priorityQueue.enqueue("Sunil", 2);
 
-// prints [Piyush Sumit Sunny Sunil Sheru] 
-priorityQueue.printPQueue();
+// // prints [Piyush Sumit Sunny Sunil Sheru] 
+// priorityQueue.printPQueue();
 
-//change priority
-priorityQueue.ChangePriority("Sumit", 4);
+// //change priority
+// priorityQueue.ChangePriority("Sumit", 4);
 
-// prints [Piyush Sumit Sunny Sunil Sheru] 
-priorityQueue.printPQueue();
+// // prints [Piyush Sumit Sunny Sunil Sheru] 
+// priorityQueue.printPQueue();
+
+
+module.exports = new PriorityQueue;
